@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rubahapi.maintenance">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_image"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- android:roundIcon="@mipmap/ic_launcher_round" -->
+        <activity
+            android:name="com.rubahapi.maintenance.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.rubahapi.maintenance.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rubahapi.maintenance.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.rubahapi.maintenance.SignupActivity"
+            android:label="Signup"
+            android:parentActivityName="com.rubahapi.maintenance.LoginActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light" />
+        <activity
+            android:name="com.rubahapi.maintenance.FrontActivity"
+            android:label="@string/title_activity_front"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
